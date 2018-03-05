@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher|Righteous" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+   
 </head>
 <body>
     
@@ -15,45 +19,39 @@
         <header id="header" class="">
 
             <h1 id="title">Trivia Game</h1>
+            <h1 id="timer"></h1>
 
         </header>
 
-        <main id="main1" class="">
+        <main id="main1" class="backdrop">
 
-            <h2 id="displayQuestion">Quiz : <br></h2>
+            <h2 id="displayQuestion">Welcome : <br></h2>
+            <div class="moveAnswer">
 
-            <p id="answerA"></p>
-            <p id="answerB"></p>
-            <p id="answerC"></p>
-            <p id="answerD"></p>
+                <p id="answerA" class="para">You have 90 seconds to complete 5 questions!</p>
+                <p id="answerB" class="para">Click the start button to begin! </p>
+                <p id="answerC" class="para">Click End if you want to quit. </p>
+                <p id="answerD" class="para">If you didn't have a perfect score, Click reset to reset the game! </p>
 
-        </main>>
+            </div>
+
+            <div id="displayEndGame"></div>
+
+        </main>
 
         <aside id="aside" class="">
 
-        </aside>>
+            <button id="btnStart" class="">Start</button>
+            <button id="btnEnd" class="">End Quiz</button>
+            <button id="btnReset" class="">Reset</button>
+
+        </aside>
 
         <footer id="footer" class="">
 
-                <small><i>Copyright &copy; 2017 Janet Lisowski</i></small>
+                <small><i>Copyright &copy; 2018 Janet Lisowski</i></small>
 
-        </footer>>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </footer>
 
 
 
@@ -61,8 +59,11 @@
 
 
 
-    
+    <!-- resource jquery script tag -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    
+<!-- resource js page/ -->
+    <script src="assets/javascript/app.js"></script>
+
+
 </body>
 </html>
