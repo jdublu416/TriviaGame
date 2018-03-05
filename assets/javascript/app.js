@@ -98,6 +98,7 @@ $(document).ready(function() {
 
     endGame(clickCount);
     $("#displayEndGame").text("Looks like you give up!");
+    stop();
   });
 
   $("#btnReset").on("click", function() {

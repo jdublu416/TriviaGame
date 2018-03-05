@@ -27,7 +27,9 @@ body {
     "aside aside aside main main main"
     "footer footer footer footer footer footer";
 }
-
+#displayEndGame{
+  font-size: 2rem;
+}
 #header {
   grid-area: header;
 }
